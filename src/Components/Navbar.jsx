@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import Contact from './Button'
 import { HiMenuAlt3, HiX } from 'react-icons/hi'
 
 function Navbar() {
@@ -14,12 +13,12 @@ function Navbar() {
     const [open, setOpen] = useState(false)
 
     return (
-        <div className='w-full fixed top-0 left-0'>
+        <div className='sticky w-full top-0 left-0 bg-[#363636]'>
             <div className='items-center py-4 md:px-10 md:flex md:justify-between'>
 
                 {/* Logo */}
-                <div className='px-7 cursor-pointer'>
-                    <img src='../logo.png' alt='Logo' class='h-8'></img>
+                <div className='px-7 cursor-pointer md:px-0'>
+                    <img src='../logo.png' alt='Logo' class='h-8 md:h-11 transition-all duration-100'></img>
                 </div>
 
                 {/* Burger Menu Icon */}
@@ -31,20 +30,23 @@ function Navbar() {
                 </div>
 
                 {/* Menu Items */}
-                <ul className={`absolute z-[-1] w-full text-center
-                md:flex md:items-center md:pb-0 md:static md:z-auto md:w-auto md:pl-0 
-                transition-all duration-500 ${open ? 'top-20' : 'top-[-490px]'}`}> 
+                <ul className={`absolute z-[-1] w-full text-center bg-[#363636] pb-5
+                md:flex md:items-center md:pb-0 md:static md:z-auto md:w-auto md:pl-0
+                transition-all duration-500 ${open ? 'top-16' : 'top-[-490px]'}`}> 
                     {
                         Links.map((Nav) => (
-                            <li key={Nav.name} className="text-xl my-7 md:ml-8 md:my-0">
+                            <li key={Nav.name} className="text-2xl my-7 md:ml-8 md:my-0">
                                 <a href = {Nav.link} className='text-gray-200 hover:text-gray-400 duration-200'>{Nav.name}</a>
                             </li>
                         ))
                     }
 
-                    <Contact>
-                        Contact
-                    </Contact>
+                <button
+                    className='bg-orange-700 text-gray-200 py-2 px-6 
+                    rounded md:ml-8 hover:bg-orange-800 duration-200 text-2xl'>
+                    Contact
+                </button>
+
                 </ul>
             </div>
         </div>

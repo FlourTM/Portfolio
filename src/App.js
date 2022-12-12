@@ -1,13 +1,14 @@
-import './App.css';
+import './App.css'
+import Navbar from './Components/Navbar'
+import Mainpage from './Components/Mainpage';
 
 function App() {
   return (
-    <div className="App">
-      <h1 class="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-    </div>
-  );
+    <>
+    <Navbar/>
+    <Mainpage/>
+    </>
+  )
 }
 
 export default App;
