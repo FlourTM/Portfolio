@@ -18,7 +18,7 @@ function Navbar() {
 
                 {/* Logo */}
                 <div className='px-7 cursor-pointer md:px-0'>
-                    <img src='../logo.png' alt='Logo' class='h-8 md:h-11 transition-all duration-100'></img>
+                    <img src='../logo.png' alt='Logo' class='h-8 md:object-contain md:h-11 transition-all duration-100'></img>
                 </div>
 
                 {/* Burger Menu Icon */}

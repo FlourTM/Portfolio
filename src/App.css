@@ -15,3 +15,25 @@ h1 {
 
     padding-left: 1.75rem;
 }
+
+/******************/
+/* Scrollbar Info */
+/******************/
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: lightgray;
+    border-radius: 20px;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: gray;
+    border-bottom-left-radius: 20px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: lightgray;
+}
