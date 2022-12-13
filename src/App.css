@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* :root{
+    --primary-color: rgb(54, 54, 54),
+    --secondary-color: rgb(194, 65, 12);,
+    --font-color-1: lightgrey,
+    --font-color-2: grey,
+} */
+
 body {
     background-color: rgb(54, 54, 54);
 }

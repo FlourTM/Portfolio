@@ -10,7 +10,7 @@ const Mainpage = () => {
         <p className='text-gray-500 font-medium text-2xl px-3 py-8 sm:text-center sm:px-24 lg:px-80'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum veniam provident, illo magnam nemo ea, quo iure,
           cumque consequuntur eaque esse architecto iusto vitae in harum! Totam sint soluta necessitatibus!</p>
         <div className='flex items-center justify-center'>
-          <button type="submit" className='border-4 border-orange-700 rounded py-3 px-12 text-orange-700 text-3xl font-medium'>VIEW RESUME</button>
+          <button type="submit" className='border-4 border-orange-700 rounded py-3 px-12 text-orange-700 text-3xl font-medium active:bg-orange-700 active:text-gray-200'>VIEW RESUME</button>
         </div>
       </div>
     </div>
