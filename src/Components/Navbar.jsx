@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { HiMenuAlt3, HiX } from 'react-icons/hi'
-import { link } from 'react-scroll'
-function Navbar() {
+import { Link } from 'react-scroll'
+const Navbar = () => {
 
     let Links = [
         { name: "Home", link: "/" },
@@ -36,17 +36,17 @@ function Navbar() {
                     {
                         Links.map((Nav) => (
                             <li key={Nav.name} className="text-2xl my-7 md:ml-8 md:my-0">
-                                <a href={Nav.link} className='text-gray-200 hover:text-gray-400 duration-200'>{Nav.name}</a>
+                                <Link to={Nav.name} smooth={true} duration={500} className='cursor-pointer text-gray-200 hover:text-gray-400 duration-200'>
+                                    {Nav.name}
+                                </Link>
                             </li>
                         ))
                     }
-
-                    <button
-                        className='bg-orange-700 text-gray-200 py-2 px-6 
+                    <Link to="Contact" smooth={true} duration={500}
+                    className='cursor-pointer bg-orange-700 text-gray-200 py-2 px-6 
                     rounded md:ml-8 hover:bg-orange-800 duration-200 text-2xl'>
                         Contact
-                    </button>
-
+                    </Link>
                 </ul>
             </div>
         </div>

@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <div className='grid gap-40 mt-12'>
+      <div>
         <Home />
         <About />
         <Experience />
