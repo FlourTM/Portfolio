@@ -1,25 +1,18 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* :root{
-    --primary-color: rgb(54, 54, 54),
-    --secondary-color: rgb(194, 65, 12);,
-    --font-color-1: lightgrey,
-    --font-color-2: grey,
-} */
-
 body {
-    background-color: rgb(54, 54, 54);
+    background-color:var(--primary-color);
+}
+
+.hook{
+    @apply text-2xl text-left pl-3 pb-4 sm:pr-72 sm:text-center;
+    color: var(--font-accent)
 }
 
 h1 {
-    color: rgb(194, 65, 12);
+    color: var(--font-accent);
     text-decoration: underline;
     text-underline-offset: .5rem;
     font-size: 3rem;
     font-style: italic;
-
     padding-left: 1.75rem;
 }
 
