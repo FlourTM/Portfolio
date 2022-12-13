@@ -11,6 +11,10 @@ const Navbar = () => {
     ]
 
     const [open, setOpen] = useState(false)
+    const [click, setClick] = useState(false)
+
+    const handleClick = () => setClick(!click)
+    const closeMenu = () => setClick(false)
 
     return (
         <div className='sticky w-full top-0 left-0 bg-[#363636]'>
@@ -18,7 +22,7 @@ const Navbar = () => {
 
                 {/* Logo */}
                 <div className='px-7 cursor-pointer md:px-0'>
-                    <img src='../logo.png' alt='Logo' class='h-8 md:object-contain md:h-11 transition-all duration-100'></img>
+                    <img src='../images/logo.png' alt='Logo' class='h-8 md:object-contain md:h-11 transition-all duration-100'></img>
                 </div>
 
                 {/* Burger Menu Icon */}
@@ -30,13 +34,14 @@ const Navbar = () => {
                 </div>
 
                 {/* Menu Items */}
-                <ul className={`absolute z-[-1] w-full text-center bg-[#363636] pb-5
+                <ul class={click ? 'navmenu active' : 'nav-menu'} className={`absolute z-[-1] w-full text-center bg-[#363636] pb-5
                 md:flex md:items-center md:pb-0 md:static md:z-auto md:w-auto md:pl-0
                 transition-all duration-500 ${open ? 'top-16' : 'top-[-490px]'}`}>
                     {
                         Links.map((Nav) => (
                             <li key={Nav.name} className="text-2xl my-7 md:ml-8 md:my-0">
-                                <Link to={Nav.name} smooth={true} duration={500} className='cursor-pointer text-gray-200 hover:text-gray-400 duration-200'>
+                                <Link to={Nav.name} spy={true} smooth={true} duration={500} 
+                                className='cursor-pointer text-gray-200 active:text-orange-700 hover:text-gray-400 duration-200'>
                                     {Nav.name}
                                 </Link>
                             </li>
