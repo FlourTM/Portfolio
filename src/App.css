@@ -1,14 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-    background-color:var(--primary-color);
+    @apply bg-primarycolor;
 }
 
 .hook{
-    @apply text-2xl text-left pl-3 pb-4 sm:pr-72 sm:text-center;
-    color: var(--font-accent)
+    @apply text-2xl text-left pl-3 pb-4 sm:pr-72 sm:text-center text-fontaccent; 
 }
 
 h1 {
-    color: var(--font-accent);
+    @apply text-fontaccent;
     text-decoration: underline;
     text-underline-offset: .5rem;
     font-size: 3rem;

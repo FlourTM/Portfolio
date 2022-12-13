@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import { HiMenuAlt3, HiX } from 'react-icons/hi'
 import { Link } from 'react-scroll'
-import './Navbar.css'
 
 const Navbar = () => {
     const [open, setOpen] = useState(false)
@@ -19,11 +18,11 @@ const Navbar = () => {
             {/* Menu Items */}
             <div className="hidden md:flex">
                 <ul className="flex">
-                    <li><Link to='Home' smooth={true} duration={500}>Home</Link></li>
-                    <li><Link to='About' smooth={true} duration={500}>About</Link></li>
-                    <li><Link to='Experience' smooth={true} duration={500}>Experience</Link></li>
-                    <li><Link to='Projects' smooth={true} duration={500}>Projects</Link></li>
-                    <button class= "contact"><Link to='Contact' smooth={true} duration={500}>Contact</Link></button>
+                    <li className="text-fontprimary px-4 text-2xl my-3 cursor-pointer hover:text-navhover"><Link to='Home' smooth={true} duration={500}>Home</Link></li>
+                    <li className="text-fontprimary px-4 text-2xl my-3 cursor-pointer hover:text-navhover"><Link to='About' smooth={true} duration={500}>About</Link></li>
+                    <li className="text-fontprimary px-4 text-2xl my-3 cursor-pointer hover:text-navhover"><Link to='Experience' smooth={true} duration={500}>Experience</Link></li>
+                    <li className="text-fontprimary px-4 text-2xl my-3 cursor-pointer hover:text-navhover"><Link to='Projects' smooth={true} duration={500}>Projects</Link></li>
+                    <button className="text-fontprimary bg-buttoncolor hover:bg-buttonhover my-1 px-4 text-2xl rounded ml-5"><Link to='Contact' smooth={true} duration={500}>Contact</Link></button>
                 </ul>
             </div>
 
@@ -39,11 +38,11 @@ const Navbar = () => {
             <ul className={`absolute z-[-1] w-full text-center bg-[#363636] pb-5
                 md:hidden md:items-center md:pb-0 md:static md:z-auto md:w-auto md:pl-0
                 transition-all duration-500 ${open ? 'top-16' : 'top-[-490px]'}`}>
-                <li><Link to='Home' smooth={true} duration={500}>Home</Link></li>
-                <li><Link to='About' smooth={true} duration={500}>About</Link></li>
-                <li><Link to='Experience' smooth={true} duration={500}>Experience</Link></li>
-                <li><Link to='Projects' smooth={true} duration={500}>Projects</Link></li>
-                <li><Link to='Contact' smooth={true} duration={500}>Contact</Link></li>
+                <li className="text-fontprimary px-4 text-2xl my-3 cursor-pointer hover:text-navhover"><Link to='Home' smooth={true} duration={500}>Home</Link></li>
+                <li className="text-fontprimary px-4 text-2xl my-3 cursor-pointer hover:text-navhover"><Link to='About' smooth={true} duration={500}>About</Link></li>
+                <li className="text-fontprimary px-4 text-2xl my-3 cursor-pointer hover:text-navhover"><Link to='Experience' smooth={true} duration={500}>Experience</Link></li>
+                <li className="text-fontprimary px-4 text-2xl my-3 cursor-pointer hover:text-navhover"><Link to='Projects' smooth={true} duration={500}>Projects</Link></li>
+                <li className="text-fontprimary px-4 text-2xl my-3 cursor-pointer hover:text-navhover"><Link to='Contact' smooth={true} duration={500}>Contact</Link></li>
             </ul>
         </div>
     )

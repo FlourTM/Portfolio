@@ -18,6 +18,19 @@ module.exports = {
   
         '2xl': '1536px',
         // => @media (min-width: 1536px) { ... }
+      },
+      colors:{
+        primarycolor: '#363636',
+        secondarycolor: '#C2410C',
+    
+        fontprimary: '#E5E7EB',
+        fontsecondary: '#9CA3AF',
+        fontbody: '#6B7280',
+        fontaccent: '#C2410C',
+        navhover: '#9CA3AF',
+    
+        buttoncolor: '#C2410C',
+        buttonhover: '#9A3412',
       }
     },
   },
