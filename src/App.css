@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    @apply bg-primarycolor;
-}
 
 .hook{
     @apply text-2xl text-left pl-3 pb-4 sm:pr-72 sm:text-center text-fontaccent; 
