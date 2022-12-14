@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { HiMenuAlt3, HiX } from 'react-icons/hi'
 import { Link } from 'react-scroll'
+import './Navbar.css'
 
 
 let Links = [
@@ -19,7 +20,7 @@ const Navbar = () => {
     const closeMenu = () => setClick(false)
 
     return (
-        <div className='fixed w-full top-0 left-0 bg-[#363636]'>
+        <div className='fixed w-full top-0 left-0 bg-primarycolor'>
             <div className='items-center py-4 md:px-10 md:flex md:justify-between'>
 
                 {/* Logo */}
@@ -37,22 +38,19 @@ const Navbar = () => {
 
                 {/* Menu Items */}
                 <ul class={click ? 'navmenu active' : 'nav-menu'} 
-                className={`absolute z-[-1] w-full text-center bg-[#363636] pb-5
+                className={`absolute z-[-1] w-full text-center bg-primarycolor pb-5
                 md:flex md:items-center md:pb-0 md:static md:z-auto md:w-auto md:pl-0
                 transition-all duration-500 ${open ? 'top-16' : 'top-[-490px]'}`}>
                     {
                         Links.map((Nav) => (
                             <li key={Nav.name} className="text-2xl my-7 md:ml-8 md:my-0">
-                                <Link to={Nav.name} spy={true} smooth={true} duration={500}
-                                    className='text-gray-200 active:text-orange-700 hover:text-gray-400 duration-200'>
-                                    {Nav.name}
-                                </Link>
+                                <Link to={Nav.name} spy={true} smooth={true} duration={500} activeClass='active'>{Nav.name}</Link>
                             </li>
                         ))
                     }
                     <Link to="Contact" smooth={true} duration={500}
-                        className='cursor-pointer bg-orange-700 text-gray-200 py-2 px-6 
-                    rounded md:ml-8 hover:bg-orange-800 duration-200 text-2xl'>
+                        className='cursor-pointer bg-buttoncolor text-fontprimary py-2 px-6 
+                    rounded md:ml-8 hover:bg-buttonhover duration-200 text-2xl'>
                         Contact
                     </Link>
                 </ul>
