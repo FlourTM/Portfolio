@@ -1,12 +1,5 @@
 # Portfolio Website Template
 
-## APIs used
-- ReactJS
-- React-Icons
-- React-Scroll
-- TailwindCSS
-
-
 ## Sections
 
 > ### Home
@@ -22,4 +15,10 @@ Display your *experience* in the "Experience" section, whether that be the diffe
 Show off your most recent works in the "Projects" section of the website by creating a new card for each project you would like to display. The cards contain an image to preview your project along with a "view" button that links to it.<br><br>
 
 > ### Contact
-On the "Contact" page, you're able to set up receiving forms in any way you like whether that's directly through email or through a HTML form handling service.
+On the "Contact" page, you're able to set up receiving forms in any way you like whether that's directly through email or through a HTML form handling service.<br>
+
+## APIs Used
+- ReactJS
+- React-Icons
+- React-Scroll
+- TailwindCSS
