@@ -7,6 +7,7 @@ const Experience = () => {
                 <h1 className='pl-3 sm:text-center sm:pl-0'>Experience</h1>
                 <p className='text-fontprimary text-2xl font-medium px-3 py-2 sm:text-center sm:px-0'>Languages and software I've worked with:</p>
 
+                {/* Will need to change img src to link for each logo/icon */}
                 <p className='text-fontprimary text-2xl pl-3 pb-2 underline underline-offset-4 py-5 sm:text-center sm:px-0'>Web Development</p>
                 <div className='pl-3 grid grid-cols-3 gap-3 place-items-start md:gap-x-16 sm:px-0 sm:place-items-center'>
                     <div className='grid items-center'>
