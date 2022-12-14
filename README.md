@@ -1,5 +1,12 @@
 # Portfolio Website Template
 
+## Important Information
+Comments are included to explain where information should be changed. 
+
+Individual project images and application experience icons will need to be uploaded and adjusted accordingly in the documents. 
+
+Colors can be changed in the Tailwind config file. 
+
 ## Sections
 
 > ### Home
