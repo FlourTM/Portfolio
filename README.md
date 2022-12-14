@@ -29,3 +29,6 @@ On the "Contact" page, you're able to set up receiving forms in any way you like
 - React-Icons
 - React-Scroll
 - TailwindCSS
+
+## Preview
+![Portfolio Website Template](https://user-images.githubusercontent.com/116513052/207505775-b65cd01a-9539-4e58-a0b4-4c4d81166103.png)
