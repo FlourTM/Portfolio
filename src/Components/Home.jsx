@@ -2,7 +2,7 @@ import React from 'react'
 
 const Mainpage = () => {
   return (
-    <div name="Home" className='w-full h-screen'>
+    <div name="Home" className='w-full h-screen bg-primarycolor'>
       <div className='mx-auto px-8 flex flex-col justify-center h-full'>
         <p class='hook'>Hi, my name is</p>
         <h2 className='text-fontprimary font-bold text-5xl text-right px-3 sm:text-center'>Full Name</h2>
