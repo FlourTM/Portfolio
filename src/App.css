@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    @apply bg-primarycolor
+}
+
+.hook{
+    @apply text-2xl text-left pl-3 pb-4 sm:pr-72 sm:text-center text-fontaccent; 
+}
+
+h1 {
+    @apply text-fontaccent;
+    text-decoration: underline;
+    text-underline-offset: .5rem;
+    font-size: 3rem;
+    font-style: italic;
+    padding-left: 1.75rem;
+}
+
+/******************/
+/* Scrollbar Info */
+/******************/
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-primarycolor
+}
+  
+::-webkit-scrollbar-thumb {
+    @apply bg-fontbody
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-fontsecondary
+}
