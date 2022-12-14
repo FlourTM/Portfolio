@@ -1,5 +1,12 @@
 # Portfolio Website Template
 
+## APIs used
+- ReactJS
+- React-Icons
+- React-Scroll
+- TailwindCSS
+
+
 ## Sections
 
 > ### Home
