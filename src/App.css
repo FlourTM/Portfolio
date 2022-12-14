@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+    @apply bg-primarycolor
+}
 
 .hook{
     @apply text-2xl text-left pl-3 pb-4 sm:pr-72 sm:text-center text-fontaccent; 
@@ -25,15 +28,13 @@ h1 {
 }
 
 ::-webkit-scrollbar-track {
-    background: lightgray;
-    border-radius: 20px;
+    @apply bg-primarycolor
 }
   
 ::-webkit-scrollbar-thumb {
-    background: gray;
-    border-bottom-left-radius: 20px;
+    @apply bg-fontbody
 }
   
 ::-webkit-scrollbar-thumb:hover {
-    background: lightgray;
+    @apply bg-fontsecondary
 }

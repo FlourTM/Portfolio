@@ -2,7 +2,7 @@ import React from 'react'
 
 const Experience = () => {
     return (
-        <div name="Experience" className='w-full h-fit'>
+        <div name="Experience" className='w-full h-fit bg-primarycolor'>
             <div className='mx-auto px-8 flex flex-col h-full md:items-center p-40 max-w-screen-sm'>
                 <h1 className='pl-3 sm:text-center sm:pl-0'>Experience</h1>
                 <p className='text-fontprimary text-2xl font-medium px-3 py-2 sm:text-center sm:px-0'>Languages and software I've worked with:</p>
