@@ -21,18 +21,20 @@ module.exports = {
 
         'navlg': '940px',
       },
-      colors:{
-        primarycolor: '#363636',
-        secondarycolor: '#C2410C',
+      colors: {
+        primarycolor: '#B7CCC6',
+        secondarycolor: '#AC0839',
     
-        fontprimary: '#E5E7EB',
-        fontsecondary: '#9CA3AF',
-        fontbody: '#6B7280',
-        fontaccent: '#C2410C',
-        navhover: '#9CA3AF',
+        fontprimary: '#333E3C',
+        fontsecondary: '#157A6E',
+        fontbody: '#494C6F',
+        fontaccent: '#AC0839',
+        navhover: '#E05256',
     
-        buttoncolor: '#C2410C',
-        buttonhover: '#9A3412',
+        buttoncolor: '#AC0839',
+        buttonhover: '#E05256',
+
+        formbg: '#E9E9ED',
       }
     },
   },
