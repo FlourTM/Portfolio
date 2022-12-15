@@ -9,7 +9,7 @@ const Projects = () => {
 
                 {/* Will need to change bg-url to link for each project image (best if square images) */}
                 {/* Will also need to include project link in form action */}
-                <div className='grid grid-flow-col gap-3 px-3 overflow-x-auto sm:gap-8 sm:px-0 xl:justify-center'>
+                <div className='grid grid-flow-col gap-3 px-3 overflow-x-auto sm:gap-8 sm:px-0 md:justify-center'>
                     <form action='https://github.com/FlourTM/Best-Pets' target='_blank'>
                         <div class="w-[324px] h-[324px] border-secondarycolor border-4 px-4 py-4 flex flex-col">
                             <p className='text-fontprimary text-2xl font-medium'>Best Pets</p>

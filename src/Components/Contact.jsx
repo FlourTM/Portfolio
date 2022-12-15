@@ -11,7 +11,7 @@ const Contact = () => {
                 <form method="POST" action="https://getform.io/f/6bb889ea-462e-447c-9cba-f1e4ca7e46d9" target='_blank' className='grid px-3 text-xl sm:w-[520px] lg:w-[620px]'>
                     <input name="name" type='text' placeholder='Name' className='pl-3 py-2 my-3 bg-formbg border-b-4 border-r-4 border-fontaccent' required></input>
                     <input name="email" type='email' placeholder='Email' className='pl-3 py-2 my-3 bg-formbg border-b-4 border-r-4 border-fontaccent' required></input>
-                    <textarea name="message" placeholder='Message' className='pl-3 pt-2 pb-44 my-3 bg-formbg border-b-4 border-r-4 border-fontaccent'></textarea>
+                    <textarea name="message" placeholder='Message' className='pl-3 pt-2 pb-44 my-3 bg-formbg border-b-4 border-r-4 border-fontaccent' required></textarea>
                     <div className='flex items-center justify-center'>
                         <button type="submit" className='bg-buttoncolor rounded py-3 px-20 mt-4 text-fontprimary text-3xl font-medium sm:px-32 hover:bg-buttonhover'>SEND</button>
                     </div>
