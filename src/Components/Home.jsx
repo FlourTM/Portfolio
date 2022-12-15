@@ -19,7 +19,8 @@ const Mainpage = () => {
         Information Tech. Currently focusing on expanding on my web development skills by building new website applications.</p>
         <div className='flex items-center justify-center'>
           <button type="submit" onClick={resumeClick}
-            className='border-4 border-buttoncolor rounded py-3 px-12 text-fontaccent text-3xl font-medium hover:bg-buttonhover hover:text-fontprimary'>
+            className='border-4 border-buttoncolor rounded py-3 px-12 text-fontaccent text-3xl font-medium 
+            hover:bg-buttoncolor hover:text-fontprimary'>
             VIEW RESUME
           </button>
         </div>
