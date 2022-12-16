@@ -21,24 +21,24 @@ module.exports = {
 
         'navlg': '940px',
       },
+      
       colors: {
         primarycolor: '#2f4454',
-        secondarycolor: '#c96567',
+        secondarycolor: '#213443',
+        accentcolor: '#c96567',
+        buttonhover: '#9E5254',
+        formbg: '#d5d5d5',
     
         fontprimary: '#d5d5d5',
         fontsecondary: '#9099a2',
         fontbody: '#8D9AB5',
-        fontaccent: '#c96567',
         navhover: '#c96567',
-    
-        buttoncolor: '#c96567',
-        buttonhover: '#9E5254',
-
-        formbg: '#d5d5d5',
       },
+
       animation: {
         shine:"shine 1s",
       },
+
       keyframes: {
         shine: {
           "100%": { left: "125%" },

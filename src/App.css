@@ -3,15 +3,15 @@
 @tailwind utilities;
 
 body{
-    @apply bg-primarycolor
+    @apply bg-primarycolor;
 }
 
 .hook{
-    @apply text-2xl text-left pl-3 pb-4 sm:pr-72 sm:text-center text-fontaccent font-semibold; 
+    @apply text-2xl text-left pl-3 pb-4 sm:pr-72 sm:text-center text-accentcolor font-semibold; 
 }
 
 h1 {
-    @apply text-fontaccent font-semibold;
+    @apply text-accentcolor font-semibold;
     text-decoration: underline;
     text-underline-offset: .5rem;
     font-size: 3rem;

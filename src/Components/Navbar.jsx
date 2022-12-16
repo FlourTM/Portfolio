@@ -16,12 +16,12 @@ const Navbar = () => {
     const [open, setOpen] = useState(false)
     const [click, setClick] = useState(false)
 
-    const handleClick = () => setClick(!click)
-    const closeMenu = () => setClick(false)
+    // const handleClick = () => setClick(!click)
+    // const closeMenu = () => setClick(false)
 
     return (
-        <div className='fixed w-full top-0 left-0 bg-primarycolor'>
-            <div className='items-center py-4 navlg:px-10 navlg:flex navlg:justify-between'>
+        <div class="fixed w-full top-0 left-0 bg-primarycolor">
+            <div className='items-center py-4 navlg:px-10 navlg:py-1 navlg:flex navlg:justify-between'>
 
                 {/* Logo */}
                 <Link to="Home" smooth={true} duration={500}>
@@ -33,14 +33,14 @@ const Navbar = () => {
                 {/* Burger Menu Icon */}
                 <div className="text-3xl absolute right-5 top-4 cursor-pointer navlg:hidden">
                     <button onClick={() => setOpen(!open)}>
-                        {open ? (<HiX size='1em' color="rgb(194 65 12)" />)
+                        {open ? (<HiX size='1em' color="#c96567" />)
                             : (<HiMenuAlt3 size='1em' color="rgb(229 231 235)" />)}
                     </button>
                 </div>
 
                 {/* Menu Items */}
                 <ul class={click ? 'navmenu active' : 'nav-menu'} 
-                className={`absolute z-[-1] w-full text-center bg-primarycolor pb-5
+                className={`absolute z-[-1] w-full text-center pb-5 bg-primarycolor 
                 navlg:flex navlg:items-center navlg:pb-0 navlg:static navlg:z-auto navlg:w-auto navlg:pl-0
                 transition-all duration-500 ${open ? 'top-16' : 'top-[-490px]'}`}>
                     {
@@ -51,7 +51,7 @@ const Navbar = () => {
                         ))
                     }
                     <Link to="Contact" smooth={true} duration={500}
-                        className='cursor-pointer bg-buttoncolor text-fontprimary py-2 px-6 
+                        className='cursor-pointer bg-accentcolor text-fontprimary py-2 px-6 
                     rounded navlg:ml-8 hover:bg-buttonhover duration-200 text-2xl'>
                         Contact
                     </Link>
