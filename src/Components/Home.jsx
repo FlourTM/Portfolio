@@ -11,7 +11,7 @@ function resumeClick() {
 const Mainpage = () => {
   return (
     <div name="Home" className='w-full h-screen'>
-      <div className='mx-auto mt-3 px-8 flex flex-col justify-center h-full'>
+      <div className='mx-auto px-8 flex flex-col justify-center h-full'>
         <p class='hook'>Hi, my name is</p>
         <h2 className='text-fontprimary font-bold text-5xl text-right px-3 sm:text-center'>Gabriella Green</h2>
         <h3 className='text-fontsecondary font-bold text-3xl text-right px-3 pt-4 sm:text-center'>Computer Science & Information Technology</h3>

@@ -7,7 +7,7 @@ body{
 }
 
 .hook{
-    @apply text-2xl text-left pl-3 pb-4 sm:pr-72 sm:text-center text-accentcolor font-semibold; 
+    @apply text-2xl text-left pl-3 pb-2 sm:pr-72 sm:text-center sm:pb-4 text-accentcolor font-semibold; 
 }
 
 h1 {
